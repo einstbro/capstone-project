@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background: #FFFFFF;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 10px 35vh;
+}
+
+.logo-container {
+  margin-right: 20vh;
+}
+
+.logo {
+  cursor: pointer;
+  margin-top: 1vh;
+  height: 10vh;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 2vh;
+}
+
+.nav-list li a {
+  font-family: inter Regular;
+  text-decoration: none;
+  color: #333;
+  padding: 1vh;
+}
+
+.nav-list li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.section {
+  height: 55vh;
+  display: flex;
+  padding: 5vh 35vh;
+  background: #495E57;
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.heading {
+  color: #F4CE14;
+  font-size: xx-large;
+  margin-bottom: 10px;
+  font-family: 'Markazi Text', serif;
+}
+
+.subheading {
+  color: #FFFFFF;
+  font-size: large;
+  margin-bottom: 10px;
+  font-family: 'Markazi Text', serif;
+}
+
+.paragraph {
+  color: #FFFFFF;
+  font-size: smaller;
+  margin: 6vh 5vh 0vh 0vh;
+  font-family: 'Markazi Text', serif;
+}
+
+.image {
+  position: relative;
+  right: 6vh;
+  border-radius: 17px;
+  width: 56vh;
+  height: 67vh;
+  cursor: pointer;
+
+}
+.reservation-button {
+  margin-top: 10vh;
+  background-color: #F4CE14;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Markazi Text', serif;
+  cursor: pointer;
+}
+
+.testimonial-section {
+  height: 55vh;
+  padding: 5vh 41vh 5vh 35vh;
+  background-color: #E5E5E5;
+}
+
+.testimonial-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.testimonial-box {
+  background-color: #FFF;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial-image {
+  margin: 10px 10px 10px 0px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.testimonial {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.testimonial-name {
+  margin: 0;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.specials-container {
+  padding: 5vh 41vh 5vh 35vh
+}
+
+.header-special {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.heading-special {
+  font-family: 'Karla' sans-serif;
+  font-weight: 23vh;
+  font-size: 24px;
+}
+
+.button-special {
+  padding: 10px 20px;
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Markazi Text', serif;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #E5E5E5;
+  border-radius: 2vh;
+}
+
+.image-special {
+  border-radius: 2vh;
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 10px;
+}
+
+.dish-name {
+  font-family: 'Markazi Text', serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 0px 5px 10px;
+  display: inline-block;
+}
+.dish-last{
+  font-family: 'Markazi Text', serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2vh 10px;
+  display: inline-block;
+}
+
+.dish-price {
+  font-family: 'Markazi Text', serif;
+  margin: 0px 0px 5px 5px;
+  display: inline-block;
+  position: relative;
+  right: -13vh;
+  font-size: 16px;
+  color: #A78C2C;
+  font-weight: bold;
+}
+
+.paragraph-special {
+  font-family: 'Markazi Text', serif;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.section-little{
+  height: 69vh;
+  display: flex;
+  padding: 5vh 35vh;
+  background: #FFFFFF;
+}
+.paragraph-little{
+  font-size: smaller;
+  margin: 6vh 6vh 0vh 0vh;
+  font-family: 'Markazi Text', serif;
+}
+.image-little1{
+  position: relative;
+  right: -8vh;
+  top: 15vh;
+  border: 2px solid;
+  width: 35vh;
+  height: 50vh;
+  cursor: pointer;
+}
+.image-little2{
+  position: relative;
+  right: 6vh;
+  top: 3vh;
+  border: 2px solid;
+  width: 35vh;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #E5E5E5;
+  padding: 5vh 32.5vh;
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.resturent {
+  height: 45vh;
+  width: 30vh;
+  margin-right: 10vh;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+p {
+  margin: 5px 0;
+  color: #333;
 }
